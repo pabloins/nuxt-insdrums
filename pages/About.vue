@@ -3,11 +3,12 @@
         <h2>About</h2>
         <p>Lorem ipsum</p>
         <p>Lorem ipsum</p>
+        <div>{{ data }}</div>
     </div>
 </template>
 
 <script setup>
-
+    const { data } = await useFetch('/api/currency/GBP')
 </script>
 
 <style scoped>
